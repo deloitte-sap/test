@@ -1,0 +1,17 @@
+{
+  "authenticationMethod": "route",
+  "logout": {
+    "logoutEndpoint": "/do/logout"
+  },
+  "routes": [
+    {
+      "source": "^/backend/(.*)$",
+      "destination": "srv-api",
+      "csrfProtection": true
+    },
+    {
+      "source": "^/(.*)$",
+      "localDir": "resources/webapp"
+    }
+  ]
+}

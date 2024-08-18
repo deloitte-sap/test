@@ -1,0 +1,21 @@
+{
+  "xsappname": "copilot-app",
+  "tenant-mode": "dedicated",
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.User",
+      "description": "Default scope for users"
+    }
+  ],
+  "authorities": [],
+  "attributes": [],
+  "role-templates": [
+    {
+      "name": "User",
+      "description": "Default role for users",
+      "scope-references": [
+        "$XSAPPNAME.User"
+      ]
+    }
+  ]
+}
