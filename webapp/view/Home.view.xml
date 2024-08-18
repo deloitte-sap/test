@@ -1,0 +1,18 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    controllerName="copilot.controller.Home">
+    <Page title="Chat Interface">
+        <content>
+            <VBox>
+                <List id="chatList" items="{path: '/chat'}">
+                    <StandardListItem title="{message}" description="{sender}" />
+                </List>
+                <HBox>
+                    <Input id="chatInput" placeholder="Type your message here..." width="100%" />
+                    <Button text="Send" press="onSend" />
+                </HBox>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
